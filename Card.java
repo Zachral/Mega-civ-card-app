@@ -8,10 +8,15 @@ public class Card {
     private int GreenDiscount;
     private int OrangeDiscount;
     private int YellowDiscount; 
+    private String CardDiscount; 
+    private int AmountCardDiscount; 
+    private int Points;
+    
 
 
 
-    public Card(String Name, String Color, int Cost, int RedDiscount, int BlueDiscount, int GreenDiscount, int OrangeDiscount, int YellowDiscount) {
+    public Card(String Name, String Color, int Cost, int RedDiscount, int BlueDiscount, int GreenDiscount, int OrangeDiscount, int YellowDiscount, 
+    String CardDiscount, int AmountCardDiscount, int Points) {
         this.Name = Name;
         this.Color = Color;
         this.Cost = Cost;
@@ -20,6 +25,9 @@ public class Card {
         this.GreenDiscount = GreenDiscount;
         this.OrangeDiscount = OrangeDiscount;
         this.YellowDiscount = YellowDiscount;
+        this.CardDiscount = CardDiscount;
+        this.AmountCardDiscount = AmountCardDiscount;
+        this.Points = Points; 
     }
    
 
@@ -85,6 +93,30 @@ public class Card {
 
     public void setYellowDiscount(int YellowDiscount) {
         this.YellowDiscount = YellowDiscount;
+    }
+
+    public String getCardDiscount() {
+        return CardDiscount;
+    }
+
+    public void setCardDiscount(String cardDiscount) {
+        CardDiscount = cardDiscount;
+    }
+
+    public int getAmountCardDiscount() {
+        return AmountCardDiscount;
+    }
+
+    public void setAmountCardDiscount(int amountCardDiscount) {
+        AmountCardDiscount = amountCardDiscount;
+    }
+
+    public void setPoints(int points) {
+        Points = points;
+    }
+
+    public int getPoints() {
+        return Points;
     }
 
 
