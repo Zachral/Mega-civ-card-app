@@ -29,7 +29,21 @@ public class Card {
         this.AmountCardDiscount = AmountCardDiscount;
         this.Points = Points; 
     }
-   
+    
+    public Card(Card source){
+        this.Name = source.Name;
+        this.Color = source.Color;
+        this.Cost = source.Cost;
+        this.RedDiscount = source.RedDiscount;
+        this.BlueDiscount = source.BlueDiscount;
+        this.GreenDiscount = source.GreenDiscount;
+        this.OrangeDiscount = source.OrangeDiscount;
+        this.YellowDiscount = source.YellowDiscount;
+        this.CardDiscount = source.CardDiscount;
+        this.AmountCardDiscount = source.AmountCardDiscount;
+        this.Points = source.Points; 
+
+    }
 
     public String getName() {
         return this.Name;

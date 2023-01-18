@@ -10,14 +10,25 @@ public class Main {
             "Architecture", 10, 1),
             new Card("Mysticism", "Blue" + "Yellow", 50, 0, 5, 0, 0, 5, 
             "Monument", 10, 1),
-            new Card("Urbanism", "Red", 50, 10, 0, 5, 0, 0, "Diplomacy", 10, 1),
+            new Card("Urbanism", "Red", 50, 10, 0, 5, 0, 0, 
+            "Diplomacy", 10, 1),
+            new Card("Architecture", "Blue", 140, 0, 10, 5, 0, 0, 
+            "Mining", 20, 3),
+            new Card("Diplomacy", "Blue", 160, 5, 10, 0, 0, 0,
+             "Provincial Empire", 20, 3),
+            new Card("Naval Warfare", "Red", 160, 10, 0, 0, 5, 0,
+             "Diaspora", 20, 3),
+            new Card("Monument", "Yellow" + "Orange", 180, 0, 0, 0, 10, 10, 
+            "Wonder of the World", 20, 3),
+            new Card("Mining  ", "Orange", 230, 0, 0, 5, 20, 0,
+             null, 0, 6),
+            new Card("Provincial Empire", "Red", 260, 20, 0, 0, 0, 5,
+             null, 0, 6),
+            new Card("Diaspora", "Yellow", 270, 0, 5, 0, 0, 20,
+             null, 0, 6),
+            new Card("Wonder of the World", "Blue" + "Orange", 290, 0, 20, 0, 20, 0, 
+            null, 0, 6),
 
-
-
-            //new Card("Cloth Making", "Orange", 50, 0, 5, 0, 10, 0, 1),
-            //new Card("Sculpture", "blue", 50, 5, 10, 0, 0, 0, 1),
-            //new Card("Mysticism", "Blue" + "Yellow", 50, 0, 5, 0, 0, 5, 1)
-            
 
         }; 
     }
