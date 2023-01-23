@@ -5,5 +5,7 @@ public class Hand {
     int greenDiscountTotal = 0;
     int orangeDiscountTotal = 0;
     int yellowDiscountTotal = 0;
+    int pointsTotal = 0; 
+    
     
 }

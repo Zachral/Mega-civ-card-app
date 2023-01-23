@@ -36,12 +36,11 @@ public class Main {
             null, 0, 6), 
         }; 
 
-            //Create a cardstack that can be manipulated
+        //Create a cardstack that can be manipulated
         CardStack CardStack = new CardStack(cards); 
 
         int index = scan.nextInt(); 
         CardStack.Buy(index);
-
-       // System.out.println(Arrays.toString(cards));
+      
     }
 }
