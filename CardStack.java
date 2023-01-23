@@ -1,7 +1,8 @@
 public class CardStack{
 
     private Card[] cards; 
-
+    private Hand hand = new Hand();
+    
     public CardStack(Card[] cards) {
         this.cards = new Card[cards.length];
         for (int i = 0; i < this.cards.length; i++){
@@ -9,4 +10,12 @@ public class CardStack{
              
         }
     }
+    
+    public void Buy (int index){
+         += hand.redDiscountTotal;   
+    }; 
+
+
+    
+
 }

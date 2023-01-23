@@ -1,6 +1,12 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Main {
 
+    static Scanner scan = new Scanner(System.in);
+
     public static void main(String[] args){
+
 
         //All 495 cards as an array
         Card[] cards = new Card[]{
@@ -27,9 +33,15 @@ public class Main {
             new Card("Diaspora", "Yellow", 270, 0, 5, 0, 0, 20,
              null, 0, 6),
             new Card("Wonder of the World", "Blue" + "Orange", 290, 0, 20, 0, 20, 0, 
-            null, 0, 6),
-
-
+            null, 0, 6), 
         }; 
+
+            //Create a cardstack that can be manipulated
+        CardStack CardStack = new CardStack(cards); 
+
+        int index = scan.nextInt(); 
+        CardStack.Buy(index);
+
+       // System.out.println(Arrays.toString(cards));
     }
 }

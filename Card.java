@@ -1,5 +1,9 @@
 public class Card {
     
+    
+
+    private Hand hand = new Hand();
+
     private String Name;
     private String Color;
     private int Cost; 
@@ -133,6 +137,9 @@ public class Card {
         return Points;
     }
 
+    public void Buy (int index){
+        this.RedDiscount += hand.redDiscountTotal;   
+    }; 
 
     @Override
     public String toString() {
