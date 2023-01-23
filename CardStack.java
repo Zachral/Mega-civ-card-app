@@ -28,9 +28,41 @@ public class CardStack{
                 break; 
             }
         }
+
+        //Loop updates the cost of cards with the new discountTotal
+        for (int i = 0; i < cards.length; i++){
+            if (this.cards[i].getColor().equals("Red")){
+                this.cards[i].setCost(this.cards[i].getCost() - hand.redDiscountTotal);
+            }
+            if (this.cards[i].getColor().equals("Blue")){
+                this.cards[i].setCost(this.cards[i].getCost() - hand.blueDiscountTotal);
+            }
+            if (this.cards[i].getColor().equals("Green")){
+                this.cards[i].setCost(this.cards[i].getCost() - hand.greenDiscountTotal);
+            }
+            if (this.cards[i].getColor().equals("Orange")){
+                this.cards[i].setCost(this.cards[i].getCost() - hand.orangeDiscountTotal);
+            }
+            if (this.cards[i].getColor().equals("Yellow")){
+                this.cards[i].setCost(this.cards[i].getCost() - hand.yellowDiscountTotal);
+            }
+            if (this.cards[i].getColor().equals("Blue and Yellow")){
+                int highestDiscount = (hand.blueDiscountTotal > hand.yellowDiscountTotal) ? hand.blueDiscountTotal : hand.yellowDiscountTotal;
+                this.cards[i].setCost(this.cards[i].getCost() - highestDiscount);
+            }
+            if (this.cards[i].getColor().equals("Yellow and Orange")){
+                int highestDiscount = (hand.yellowDiscountTotal > hand.orangeDiscountTotal) ? hand.yellowDiscountTotal : hand.orangeDiscountTotal;
+                this.cards[i].setCost(this.cards[i].getCost() - highestDiscount);
+            }
+            if (this.cards[i].getColor().equals("Blue and Orange")){
+                int highestDiscount = (hand.blueDiscountTotal > hand.orangeDiscountTotal) ? hand.blueDiscountTotal : hand.orangeDiscountTotal;
+                this.cards[i].setCost(this.cards[i].getCost() - highestDiscount);
+
+            }
+        }
+    }
     }; 
 
 
     
 
-}

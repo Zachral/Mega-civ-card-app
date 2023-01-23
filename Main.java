@@ -14,7 +14,7 @@ public class Main {
              "Naval Warfare", 10, 1),
             new Card("Sculpture", "Blue", 50, 5, 10, 0, 0, 0, 
             "Architecture", 10, 1),
-            new Card("Mysticism", "Blue" + "Yellow", 50, 0, 5, 0, 0, 5, 
+            new Card("Mysticism", "Blue and Yellow", 50, 0, 5, 0, 0, 5, 
             "Monument", 10, 1),
             new Card("Urbanism", "Red", 50, 10, 0, 5, 0, 0, 
             "Diplomacy", 10, 1),
@@ -24,7 +24,7 @@ public class Main {
              "Provincial Empire", 20, 3),
             new Card("Naval Warfare", "Red", 160, 10, 0, 0, 5, 0,
              "Diaspora", 20, 3),
-            new Card("Monument", "Yellow" + "Orange", 180, 0, 0, 0, 10, 10, 
+            new Card("Monument", "Yellow and Orange", 180, 0, 0, 0, 10, 10, 
             "Wonder of the World", 20, 3),
             new Card("Mining  ", "Orange", 230, 0, 0, 5, 20, 0,
              null, 0, 6),
@@ -32,7 +32,7 @@ public class Main {
              null, 0, 6),
             new Card("Diaspora", "Yellow", 270, 0, 5, 0, 0, 20,
              null, 0, 6),
-            new Card("Wonder of the World", "Blue" + "Orange", 290, 0, 20, 0, 20, 0, 
+            new Card("Wonder of the World", "Blue and Orange", 290, 0, 20, 0, 20, 0, 
             null, 0, 6), 
         }; 
 
