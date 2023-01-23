@@ -2,7 +2,8 @@ public class Card {
 
     private String Name;
     private String Color;
-    private int Cost; 
+    private int CurrentCost;
+    private int OriginalCost;  
     private int RedDiscount;
     private int BlueDiscount;
     private int GreenDiscount;
@@ -15,11 +16,12 @@ public class Card {
 
 
 
-    public Card(String Name, String Color, int Cost, int RedDiscount, int BlueDiscount, int GreenDiscount, int OrangeDiscount, int YellowDiscount, 
+    public Card(String Name, String Color, int CurrentCost, int OriginalCost, int RedDiscount, int BlueDiscount, int GreenDiscount, int OrangeDiscount, int YellowDiscount, 
     String CardDiscount, int AmountCardDiscount, int Points) {
         this.Name = Name;
         this.Color = Color;
-        this.Cost = Cost;
+        this.CurrentCost = CurrentCost;
+        this.OriginalCost = OriginalCost;
         this.RedDiscount = RedDiscount;
         this.BlueDiscount = BlueDiscount;
         this.GreenDiscount = GreenDiscount;
@@ -33,7 +35,8 @@ public class Card {
     public Card(Card source){
         this.Name = source.Name;
         this.Color = source.Color;
-        this.Cost = source.Cost;
+        this.CurrentCost = source.CurrentCost;
+        this.OriginalCost = source.OriginalCost; 
         this.RedDiscount = source.RedDiscount;
         this.BlueDiscount = source.BlueDiscount;
         this.GreenDiscount = source.GreenDiscount;
@@ -61,13 +64,22 @@ public class Card {
         this.Color = Color;
     }
 
-    public int getCost() {
-        return this.Cost;
+    public int getCurrentCost() {
+        return this.CurrentCost;
     }
 
-    public void setCost(int Cost) {
-        this.Cost = Cost;
+    public void setCurrentCost(int CurrentCost) {
+        this.CurrentCost = CurrentCost;
     }
+
+    public int getOriginalCost() {
+        return this.OriginalCost;
+    }
+
+    public void setOriginalCost(int OriginalCost) {
+        this.OriginalCost = OriginalCost;
+    }
+
 
     public int getRedDiscount() {
         return this.RedDiscount;
@@ -137,16 +149,17 @@ public class Card {
 
     @Override
     public String toString() {
-        return "{" +
-            " Name='" + getName() + "'" +
-            ", Color='" + getColor() + "'" +
-            ", Cost='" + getCost() + "'" +
-            ", RedDiscount='" + getRedDiscount() + "'" +
-            ", BlueDiscount='" + getBlueDiscount() + "'" +
-            ", GreenDiscount='" + getGreenDiscount() + "'" +
-            ", OrangeDiscount='" + getOrangeDiscount() + "'" +
-            ", YellowDiscount='" + getYellowDiscount() + "'" +
-            "}";
+        return 
+            "Name='" + getName() + "'\n" +
+            ", Color='" + getColor() + "''\n" +
+            ", Cost='" + getCurrentCost() + "''\n" +
+            ", Red Discount='" + getRedDiscount() + "''\n" +
+            ", Blue Discount='" + getBlueDiscount() + "''\n" +
+            ", Green Discount='" + getGreenDiscount() + "''\n" +
+            ", Orange Discount='" + getOrangeDiscount() + "''\n" +
+            ", Yellow Discount='" + getYellowDiscount() + "''\n\n" 
+             
+            ;
     }
     
 
