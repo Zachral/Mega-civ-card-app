@@ -157,9 +157,7 @@ public class Card {
             ", Blue Discount='" + getBlueDiscount() + "''\n" +
             ", Green Discount='" + getGreenDiscount() + "''\n" +
             ", Orange Discount='" + getOrangeDiscount() + "''\n" +
-            ", Yellow Discount='" + getYellowDiscount() + "''\n\n" 
-             
-            ;
+            ", Yellow Discount='" + getYellowDiscount() + "''\n\n";
     }
     
 

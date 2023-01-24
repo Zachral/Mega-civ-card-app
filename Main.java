@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args){
 
-        
+       
         //All 495 cards as an array
         Card[] cards = new Card[]{
             new Card("Cloth Making", "Orange ", 50, 50, 0, 5, 0, 10, 0,
@@ -38,11 +38,14 @@ public class Main {
 
         //Create a cardstack that can be manipulated
         CardStack CardStack = new CardStack(cards); 
-        while(true){
-        System.out.println(Arrays.toString(cards));
+        while (true) {
+        System.out.println(CardStack.toString());
+        
     
         int index = scan.nextInt(); 
         CardStack.Buy(index);
         }
     }
+
+    
 }

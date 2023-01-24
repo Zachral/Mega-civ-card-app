@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class CardStack{
 
     private Card[] cards; 
@@ -63,7 +65,14 @@ public class CardStack{
 
         
     }
-    }; 
+        public String toString() {
+            
+            return
+            Arrays.toString(this.cards); 
+
+        }
+    }
+ 
 
 
     
