@@ -37,7 +37,8 @@ public class Main {
       
 
         //Create a cardstack that can be manipulated
-        CardStack CardStack = new CardStack(cards); 
+       CardStack CardStack = new CardStack(cards);
+        
         while (true) {
         System.out.println(CardStack.toString());
         

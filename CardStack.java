@@ -1,19 +1,24 @@
-import java.util.Arrays;
 import java.util.List;
-
+import java.util.Arrays;
+import java.util.ArrayList;
 public class CardStack{
+
+    
 
     private Card[] cards; 
     Hand hand = new Hand();
   
-    //Creates a copy of the ArrayLisy cards
-    public CardStack(List<Card> cards2) {
-        this.cards = new Card[cards2.size()];
-        for (int i = 0; i < this.cards.length; i++){
-            this.cards[i] = new Card(cards2.get(i)); 
+  
+    
+
+	//Creates a copy of the ArrayLisy cards
+    public CardStack(List<Card> cards){
+        List<Card> CardStack = new ArrayList<Card>();
+        CardStack.addAll(cards);
+        }; 
             
-        }
-    }
+        
+    
     // Adds discounts to colors, points and moves card.
     public void Buy (int index){
         hand.redDiscountTotal += this.cards[index].getRedDiscount();
@@ -62,7 +67,8 @@ public class CardStack{
 
             }
         }
-
+       
+        
         
     }
         public String toString() {

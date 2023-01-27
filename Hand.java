@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Hand {
 
     int redDiscountTotal = 0;
@@ -7,5 +9,6 @@ public class Hand {
     int yellowDiscountTotal = 0;
     int pointsTotal = 0; 
     
-    
-}
+  
+    }
+
