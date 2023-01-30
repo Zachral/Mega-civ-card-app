@@ -4,20 +4,21 @@ import java.util.ArrayList;
 public class CardStack{
 
     
-
-    private Card[] cards; 
-    Hand hand = new Hand();
-  
+    public Card[] cards;
+    List <Card> CardStack; 
+   
+   
+    public CardStack(Card[] cards) {
+     this.CardStack = Arrays.asList(cards); 
+    }
   
     
+   
+    Hand hand = new Hand();
 
 	//Creates a copy of the ArrayLisy cards
-    public CardStack(List<Card> cards){
-        List<Card> CardStack = new ArrayList<Card>();
-        CardStack.addAll(cards);
-        }; 
-            
-        
+
+   
     
     // Adds discounts to colors, points and moves card.
     public void Buy (int index){
@@ -71,6 +72,12 @@ public class CardStack{
         
         
     }
+    /*
+    public void copyCards(Card[] cards){
+        for (int i = 0; i < cards.length; i++){
+            CardStack.add(new Card(cards[i])); 
+          }  
+    }*/
         public String toString() {
             
             return
